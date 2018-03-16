@@ -27,7 +27,40 @@ import { User } from "./components/User";
 // }
 
 class App extends React.Component {
-
+  // constructor(){
+  //   super();
+  //   this.state = {
+  //     homeLink: "Home",
+  //     homeMounted: true
+  //   };
+  // }
+  // onGreet(){
+  //   alert("this is from Greet method");
+  // }
+  // onChangeLinkName(newName){
+  //   this.setState({
+  //     homeLink: newName
+  //   });
+  // }
+  //
+  // onChangeHomeMounted(){
+  //   this.setState({
+  //     homeMounted: !this.state.homeMounted
+  //   });
+  // }
+  // render(){
+  //   let homeComp = "";
+  //   if(this.state.homeMounted){
+  //     homeComp = (
+  //       <Home
+  //         name={"max"}
+  //         initialAge={30}
+  //         greet={this.onGreet}
+  //         changeLink={this.onChangeLinkName.bind(this)}
+  //         initialLinkName={this.state.homeLink}
+  //       />
+  //     );
+  //   }
   render(){
     return(
       <Router>
@@ -37,6 +70,7 @@ class App extends React.Component {
         </div>
       </Router>
     );
+    }
   }
-}
+
 render(<App /> , window.document.getElementById('app'));
